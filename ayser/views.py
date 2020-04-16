@@ -4,3 +4,6 @@ from django.template import loader
 
 def home(request):
     return render(request, 'ayser/home.html')
+
+def economy(request):
+    return render(request, 'ayser/canadian_economy.html')
