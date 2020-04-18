@@ -7,3 +7,6 @@ def home(request):
 
 def economy(request):
     return render(request, 'ayser/canadian_economy.html')
+
+def kakeibo(request):
+    return render(request, 'ayser/kakeibo.html')
