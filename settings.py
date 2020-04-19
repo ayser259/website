@@ -119,6 +119,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+try:
+    SECURE_SSL_REDIRECT = True
+except:
+    print("Secure SSL Redirect Failed")
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
