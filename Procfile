@@ -1,1 +1,1 @@
-web: gunicorn poc.wsgi --log-file -
+web: gunicorn website.wsgi --log-file -
