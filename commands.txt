@@ -1,0 +1,16 @@
+
+heroku logs --tail --app=ayser
+
+heroku run python poc/manage.py createsuperuser --app=ayser
+
+heroku run python poc/manage.py changepassword ayser  --app=ayser
+
+
+# to clear database
+
+heroku run python poc/manage.py flush --app=ayser
+
+
+heroku pg:reset DATABASE_URL --app=ayser
+
+heroku run bash --app=ayser
