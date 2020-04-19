@@ -1,6 +1,8 @@
 
 heroku logs --tail --app=ayser
 
+heroku ps:scale web=1 --app=ayser
+
 heroku run python poc/manage.py createsuperuser --app=ayser
 
 heroku run python poc/manage.py changepassword ayser  --app=ayser
