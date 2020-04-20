@@ -5,8 +5,11 @@ from django.template import loader
 def home(request):
     return render(request, 'ayser/home.html')
 
-def economy(request):
+def canadian_economy(request):
     return render(request, 'ayser/canadian_economy.html')
 
 def kakeibo(request):
     return render(request, 'ayser/kakeibo.html')
+
+def uw_placement_quiz(request):
+    return render(request, 'ayser/uw_placement_quiz.html')

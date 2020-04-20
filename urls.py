@@ -20,6 +20,7 @@ from ayser import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('economy', views.economy, name='economy'),
+    path('canadian_economy', views.canadian_economy, name='canadian_economy'),
     path('kakeibo', views.kakeibo, name='kakeibo'),
+    path('uw_placement_quiz', views.uw_placement_quiz, name='uw_placement_quiz'),
 ]
