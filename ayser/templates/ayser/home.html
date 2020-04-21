@@ -190,16 +190,16 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
         <li><a id="all" href="#" data-filter="*" class="active">
           <h5>All</h5>
           </a></li>
-        <li><a class="" href="#" data-filter=".prototype">
+        <li><a class="" href="#" data-filter=".UX">
           <h5>User Experience</h5>
           </a></li>
         <li><a class="" href="#" data-filter=".design">
           <h5>Design</h5>
           </a></li>
-        <li><a class="" href="#" data-filter=".android">
-          <h5>Data Analysis</h5>
+        <li><a class="" href="#" data-filter=".data_ml">
+          <h5>Data & ML</h5>
           </a></li>
-        <li><a class="" href="#" data-filter=".appleIOS">
+        <li><a class="" href="#" data-filter=".development">
           <h5>Development</h5>
           </a></li>
       </ul>
@@ -209,71 +209,70 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
     <!-- Portfolio Wrapper -->
     <div class="isotope  animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
       <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item effect-oscar">
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   design UX isotope-item effect-oscar">
 
         <div class="portfolio_img">
 		<img src="{% static 'ayser/images/kakeibo_preview.png' %}"  alt="Kakeibo"> </div>
 			<figcaption>
 				<div>
-				  <a href="img/portfolio_pic1.jpg" class="fancybox">
-					<h2>Kakeibo</h2>
-							<p>Consolidated Personal Finance Mobile App</p>
+				  <a href="kakeibo" class="fancybox">
+					<h2 >Kakeibo</h2>
+							<p>Consolidating Personal Finance in One Mobile App</p>
 				  </a>
 				</div>
 			</figcaption>
+
         </figure>
       <!--/Portfolio Item -->
 
       <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design development UX isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="{% static 'ayser/images/uw_placement_quiz_development_preview.png' %}" alt="Portfolio 1"> </div>
         	<figcaption>
 				<div>
-				  <a href="img/portfolio_pic2.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  <a href="uw_placement_quiz" class="fancybox">
+					<h2>UW Placement Quiz</h2>
+							<p>ML Based Interactive Quiz built for the University of Waterloo's Marketing & Recruiment Team</p>
 				  </a>
 				</div>
 			</figcaption>
         </figure>
       <!--/Portfolio Item -->
+      <!-- Portfolio Item-->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  data_ml web isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="{% static 'ayser/images/uw_engineering_quiz_model_building.png' %}" alt="Portfolio 1"> </div>
+         <figcaption>
+				<div>
+				  <a href="uw_placement_quiz" class="fancybox">
+					<h2>Engineering Program Classifier</h2>
+							<p>Model & building process powering the University of Waterloo's Placement Quiz</p>
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!-- Portfolio Item -->
 
       <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  data_ml  isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="{% static 'ayser/images/canadian_economy_preview.png' %}" alt="Portfolio 1"> </div>
        <figcaption>
 				<div>
-				  <a href="img/portfolio_pic3.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  <a href="canadian_economy" class="fancybox">
+					<h2>Growing Canada's GDP</h2>
+							<p>Data analysis and model building used to figure out how to boost Canada's GDP</p>
 				  </a>
 				</div>
 			</figcaption>
         </figure>
       <!--/Portfolio Item-->
-
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-         <figcaption>
-				<div>
-				  <a href="img/portfolio_pic4.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!-- Portfolio Item -->
-
       <!-- Portfolio Item -->
       <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'ayser/images/leap_of_faith.jpg' %}" alt="Portfolio 1"> </div>
        <figcaption>
 				<div>
-				  <a href="img/portfolio_pic5.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  <a href="{% static 'ayser/images/leap_of_faith.jpg' %}" class="fancybox">
+					<h2>A Leap of Faith</h2>
+							<p>A Representation of a Leap of Faith</p>
 				  </a>
 				</div>
 			</figcaption>
@@ -281,13 +280,13 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
       <!--/Portfolio Item -->
 
       <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four design web isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="{% static 'ayser/images/atomic.jpg' %}" alt="Portfolio 1"> </div>
        <figcaption>
 				<div>
-				  <a href="img/portfolio_pic6.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  <a href="{% static 'ayser/images/atomic.jpg' %}" class="fancybox">
+					<h2>Atomic</h2>
+							<p>A Celestial Representation of an Atom</p>
 				  </a>
 				</div>
 			</figcaption>
@@ -296,32 +295,17 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
 
       <!-- Portfolio Item  -->
       <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'ayser/images/waves_of_simulation.jpg' %}" alt="Portfolio 1"> </div>
        <figcaption>
 				<div>
-				  <a href="img/portfolio_pic7.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  <a href="{% static 'ayser/images/waves_of_simulation.jpg' %}" class="fancybox">
+					<h2>Waves of Simulation</h2>
+							<p>Simulation in Binary flowing through waves</p>
 				  </a>
 				</div>
 			</figcaption>
        </figure>
       <!--/Portfolio Item -->
-
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-      <figcaption>
-				<div>
-				  <a href="img/portfolio_pic8.jpg" class="fancybox">
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item -->
-
     </div>
     <!--/Portfolio Wrapper -->
 
