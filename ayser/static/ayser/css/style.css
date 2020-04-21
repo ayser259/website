@@ -812,7 +812,7 @@ img {
 }
 
 .page_section.team h6 {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 /* About Us
@@ -914,7 +914,7 @@ background-position-y: 70px;
     border-radius: 50%;
     margin: 0px 3px 25px 3px;
 }
-/*
+
 .team_box_shadow {
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -924,7 +924,7 @@ background-position-y: 70px;
     height: 26%;
     z-index: 10;
     bottom: 0px;
-} */
+}
 
 .team_box_shadow a {
     display: block;
@@ -1244,6 +1244,7 @@ border: 1px solid #034732;
 .footer_bottom {
     border-top: 1px solid #3C3A3A;
     padding: 25px 0;
+    color:#3C3A3A;
 }
 
 .footer_bottom span {
@@ -1251,11 +1252,12 @@ border: 1px solid #034732;
     font-size: 14px;
     color: #cccccc;
     text-align: center;
+    color:#3C3A3A;
 }
 
 .footer_bottom span a {
     display: inline-block;
-    color: #034732;
+    color: #3C3A3A;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1263,7 +1265,7 @@ border: 1px solid #034732;
 }
 
 .footer_bottom span a:hover {
-    color: #fff;
+    color: #3C3A3A;
 }
 
 /* Animation Timers
