@@ -663,7 +663,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a:hover {
-    background: #ED5441;
+    background: #FFF;
     color: #fff;
     text-decoration: none;
 }
@@ -711,11 +711,11 @@ img {
     transition-duration: 0.6s;
 }
 
-.isotope .isotope-item {
+/*.isotope .isotope-item {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
-}
+}*/
 
 .page_section.paddind {
     padding-bottom: 60px;
@@ -1215,9 +1215,9 @@ border: 1px solid #034732;
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #034732;
+    background: #FFF;
     border-radius: 3px;
-    color: #ffffff;
+    color: #034732;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
