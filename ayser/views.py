@@ -13,3 +13,6 @@ def kakeibo(request):
 
 def uw_placement_quiz(request):
     return render(request, 'ayser/uw_placement_quiz.html')
+
+def uw_placement_quiz(request):
+    return render(request, 'ayser/uw_engineering_program_classifier.html')

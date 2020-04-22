@@ -24,4 +24,5 @@ urlpatterns = [
     path('canadian_economy', views.canadian_economy, name='canadian_economy'),
     path('kakeibo', views.kakeibo, name='kakeibo'),
     path('uw_placement_quiz', views.uw_placement_quiz, name='uw_placement_quiz'),
+    path('uw_engineering_classifier', views.uw_engineering_classifier, name='uw_engineering_classifier'),
 ]
