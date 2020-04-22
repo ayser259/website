@@ -13153,7 +13153,7 @@ div#notebook {
         </div>
       </header>
     <!--/Nav Bar-->
-    <!--/Header_section-->  
+    <!--/Header_section-->
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -13168,7 +13168,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Check out the MVP of the <a href="https://waterlooengineeringquiz.herokuapp.com/">UW Engineering Placement Quiz!</a></strong></p>
-<p><img src="images/uw_placement_quiz_overview.png"></p>
+<p><img src="{% static 'ayser/images/uw_placement_quiz_overview.png' %}"></p>
 <h2 id="Context:">Context:<a class="anchor-link" href="#Context:">&#182;</a></h2><p>The University of Waterloo has fifteen direct entry engineering programs within its engineering faculty. Applicants need to decide which engineering programs to apply to before during their application to the University. Students' are only given acceptances for a given program. Transferring from one program to another is difficult can often involves students needing to add an additionaly year to their University career in order to graduate. Selecting a program to enter is one of the most significant decisions that an undergraduate engineering student at the University of Waterloo has to make.</p>
 <p>For reference, these are the all of the engineering programs available at the Faculty of Engineering at UW:</p>
 <table>
@@ -13218,7 +13218,7 @@ div#notebook {
 <p>3.1.2. Student Interviews. Students were interviewed to collect information regarding what they wish they had known before joining their programs. It was hypothesized that this information would help raise any misconceptions, and would allow their consideration when redesigning the new decision support tool. For example, one student learned how similar Mechanical and Chemical Engineering were after being in the program for a couple of years. This was something they wished they had known before joining. It also proved beneficial to get information from students about the types of students that enjoy their program, as they all work so closely together. As the new decision tool will be used to help prospective students learn more about their programs, it was necessary to collect data relating to what actual students have experienced during their years in Engineering.</p>
 <p>3.1.3. Affinity Diagramming. Having collected such a large amount of data, a need existed to organize the findings and cluster based on similarities. Using the affinity diagramming method proved to be a very effective way to organize the raw data. This exercise led to a deeper understanding of the unique characteristics of each program which was used to generate questions for the quiz.</p>
 <p>The following diagram shows the end-result after several iterations of affinity diagramming.</p>
-<p><img src="images/uw_placement_quiz_affinity_diagram.png"></p>
+<p><img src="{% static 'ayser/images/uw_placement_quiz_affinity_diagram.png' %}"></p>
 
 </div>
 </div>
@@ -13254,12 +13254,12 @@ div#notebook {
 <h2 id="Stage-3:-Building-the-Interactive-Quiz">Stage 3: Building the Interactive Quiz<a class="anchor-link" href="#Stage-3:-Building-the-Interactive-Quiz">&#182;</a></h2><p><strong>Conceptual Front End Designs Considered</strong>: As mentioned earlier, previous efforts to address the problem took the form of a quiz followed by a list of program recommendations. After brainstorming designs and weighing the pros and cons, it was determined that keeping the solution in the form of a quiz was the most optimal. This was because quizzes are easy and intuitive to use and the client was familiar with marketing a quiz as a tool for students to use. Additional brainstormed solutions included a game or a search engine, but were eliminated due to hosting constraints and viability.</p>
 <p><strong>Description of Final Front End Design</strong> : Once an understanding of the main user and their goals were established, a frontend solution was iteratively designed and implemented.</p>
 <p>This Engineering Placement Quiz focuses on delivering a personalized experience while improving the users research and discovery process. This is outlined below.</p>
-<p><img src="images/uw_engineering_placement_quiz_user_flow.png"></p>
+<p><img src="{% static 'ayser/images/uw_engineering_placement_quiz_user_flow.png' %}"></p>
 <h3 id="Back-End-Design:">Back-End Design:<a class="anchor-link" href="#Back-End-Design:">&#182;</a></h3><p>The solution uses python as the primary programming language. With python, the model building aspect is relatively easy and leverages packages and modules that are standard for data scientists. Maintaining consistency between the data science and software development aspects of the project remained a high priority. This gave further weight for the choice of using python as the language of choice.</p>
 <p>The Django framework was leveraged to develop the website. This was done due to the simplicity of the framework and the thorough documentation available when using this particular package. Heroku was used to deploy the solution. Locally created websites can be deployed using Heroku with relative ease and a large amount of supporting documentation is readily available. From a security perspective, Django and Heroku have several cybersecurity features integrated into their design and implementation, which made them safe choices in creating a public website. In order to further ease the burden of any cybersecurity concerns, no personally identifiable or personal information is collected through the website.</p>
 <p>The website leverages a Postgres database. Postgres was selected because it is an object-relational database and thus has features, such as the inheritance of tables and overloading functions, integrated into its design and implementation. Given that the quiz will experience a large amount of traffic during peak usage periods, having a database that could handle concurrency was of primary importance. This lent further preference to selecting Postgres, as it handles concurrency better than MySQL.</p>
 <p>A unified modeling language (UML) diagram has been created to demonstrate the database design, and can be seen below</p>
-<p><img src="images/uw_placement_quiz_uml.png"></p>
+<p><img src="{% static 'ayser/images/uw_placement_quiz_uml.png' %}"></p>
 <p>It is also important to note that the database is not interconnected. In order to protect the anonymity of all users involved, aspects related to the usage of the website are not connected. Doing so limits the impact of a potential cyber attack.</p>
 <p>The tables on the left of Appendix X are related to managing user permissions, access and edit rights for the admin site. As mentioned earlier, an admin site from Django has been leveraged and severely modified in order to provide the clients with the ability to edit and update information on the site, and to retrieve results for the purpose of analytics.</p>
 <p>To use the results for analytics, the quiz responses are logged every time the quiz is taken. Each time the quiz is taken, a timestamp is generated in order to better understand the usage of the site. These results are not tied to any identifiable information from the user and are contained in an isolated table.</p>
